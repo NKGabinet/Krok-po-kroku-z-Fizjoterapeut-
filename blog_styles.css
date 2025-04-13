@@ -1,0 +1,315 @@
+/* Ogólne style */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #001F3F;
+   
+}
+
+section {
+    margin-top: 10px;
+}
+
+.container {
+    width: 100%
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+   
+    border-radius: 40px;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+
+
+.blog1, .blog3 {
+    background-color: white;
+   
+}
+.blog2 {
+   text-align: center;
+    margin-bottom: 15px;
+       
+}
+.blog2 a {
+    margin-left: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    transition: color 0.5s;
+}
+
+.blog2 a:hover {
+     color: #ffcc00;
+}
+
+.fotoblog{
+    max-width: 650px;
+    height: auto;
+}
+
+main {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+}
+
+main h2{
+    padding: 15px
+}
+
+
+main p1{
+  font-weight: bold;
+}
+
+
+
+
+.blogaboutme {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+}
+.blogaboutme img{
+   width: 80%;
+     
+    
+}
+
+.about1 {
+    
+   flex: 0 0 75%;
+  
+    
+  
+   
+  /* Typografia */
+  font-family: 'Georgia', 'Times New Roman', serif; /* Lepsza czytelność dla długich tekstów */
+  font-size: 1.1rem; /* Optymalny rozmiar dla czytania */
+  line-height: 1.6; /* Przestrzeń między wierszami */
+  color: #333; /* Ciemnoszary zamiast czarnego - mniej męczy oczy */
+  max-width: 800px; /* Optymalna szerokość linii (50-75 znaków) */
+  margin: 0 auto; /* Wyśrodkowanie artykułu */
+  padding: 2rem;
+  text-align: justify; /* Lub 'left' - według preferencji */
+  hyphens: auto; /* Dzielenie wyrazów dla lepszego wyrównania */
+
+}
+
+.about1 p {
+  margin-bottom: 1.5rem;
+  text-indent: 1.5rem; /* Wcięcie pierwszego wiersza - opcjonalne */
+}
+
+.about2 {
+   flex: 0 0 25%;
+   margin-top: 225px;
+}
+
+
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* odstęp między wpisami */
+  max-width: 1200px; /* maksymalna szerokość kontenera */
+  margin: 0 auto; /* wyśrodkowanie */
+}
+
+.blog-post {
+  flex: 0 0 calc(50% - 10px); /* 50% minus połowa odstępu */
+  box-sizing: border-box;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex-direction: column;
+  height: 100%; /* wymusza równą wysokość */
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.blog-post p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* limit linii tekstu */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.post-image {
+  width: 100%;
+  height: 200px; /* Stała wysokość dla wszystkich zdjęć */
+  overflow: hidden;
+}
+
+.post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Zapewnia poprawne przycięcie zdjęcia */
+  transition: transform 0.5s ease;
+}
+
+.blog-post:hover .post-image img {
+  transform: scale(1.05);
+}
+
+.post-title {
+  margin: 15px 20px;
+  font-size: 1.2rem;
+  color: #333;
+  flex-grow: 1; /* Tytuł zajmuje dostępną przestrzeń */
+}
+
+/* Responsywność - na mobile jeden wpis w rzędzie */
+@media (max-width: 768px) {
+  .blog-post {
+    flex: 0 0 100%;
+  }
+}
+
+
+
+.read-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* odstęp między tekstem a strzałką */
+  padding: 10px 16px;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2c7be5; /* kolor przycisku */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #1a68d1; /* ciemniejszy odcień po najechaniu */
+  transform: translateY(-1px); /* lekki efekt uniesienia */
+}
+
+.arrow-icon {
+  fill: currentColor; /* strzałka przyjmuje kolor tekstu */
+  transition: transform 0.3s ease;
+}
+
+.read-more-btn:hover .arrow-icon {
+  transform: translateX(3px); /* strzałka przesuwa się w prawo przy hover */
+}
+
+
+
+
+
+
+/* Responsywność */
+@media (max-width: 768px) {
+   
+}
+
+/* Ukryj pasek przewijania na komputerach */
+@media (min-width: 768px) {
+    
+}
+
+
+
+/* Tryb ciemny */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-mode .floating-menu,
+body.dark-mode #gallery,
+body.dark-mode .map-container,
+body.dark-mode .info-container,
+body.dark-mode .form-container,
+body.dark-mode .top-container,
+body.dark-mode .contact-container,
+body.dark-mode .container,
+body.dark-mode .method {
+    background-color: #2d2d2d;
+}
+
+#darkModeToggle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px;
+   
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 1000;
+}
+
+/* Animacje */
+[data-aos] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#backToTop {
+    display: none; /* Domyślnie ukryty */
+    position: fixed; /* Przycisk będzie zawsze widoczny na ekranie */
+    bottom: 20px; /* Odstęp od dołu */
+    right: 20px; /* Odstęp od prawej krawędzi */
+    z-index: 99; /* Przycisk będzie na wierzchu innych elementów */
+    border: none; /* Bez obramowania */
+    outline: none; /* Bez obramowania po kliknięciu */
+    background-color: #333; /* Kolor tła */
+    color: white; /* Kolor tekstu */
+    cursor: pointer; /* Kursor wskazujący */
+    padding: 15px; /* Wewnętrzny odstęp */
+    border-radius: 50%; /* Okrągły kształt */
+    font-size: 20px; /* Rozmiar ikony */
+    font-weight: bold;
+    transition: background-color 0.3s; /* Efekt przejścia */
+}
+
+#backToTop:hover {
+    background-color: black; /* Kolor tła po najechaniu */
+}
+
+
